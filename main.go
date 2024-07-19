@@ -46,7 +46,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		case "down", "j":
 			if m.cursor < len(m.choices)-1 {
-				m.cursor--
+				m.cursor++
 			}
 
 		case "enter", " ":
